@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Smartphone, Wifi, Download, Zap, Shield, Globe } from "lucide-react"
+import { FileUpload } from "@/components/file-upload"
+import { MediaGallery } from "@/components/media-gallery"
 
 export default function HomePage() {
   return (
@@ -122,6 +124,12 @@ export default function HomePage() {
               </CardDescription>
             </CardContent>
           </Card>
+        </div>
+
+        {/* File Management Section */}
+        <div className="grid lg:grid-cols-2 gap-8 mb-12">
+          <FileUpload />
+          <MediaGallery />
         </div>
 
         {/* CTA Section */}
